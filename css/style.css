@@ -188,6 +188,11 @@ span{
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     gap: 1.5rem;
+    transform: 0.5s ease;
+}
+
+.skills-box:hover{
+    transform: scale(1.1);
 }
 
 .skills-container .skills-box{
@@ -213,28 +218,30 @@ span{
     width: 120px;
     height: 120px;
     position: absolute;
-    margin-left: -35px;
+    margin-left: -5px;
 }
 
 .skills-container #js img{
-    width: 200px;
+    width: 240px;
     height: 120px;
     position: absolute;
-    margin-left: -65px;
+    margin-left: -88px;
 }
 
 .skills-container #bootstrap img{
     width: 150px;
-    height: 140px;
+    height: 150px;
     position: absolute;
-    margin-left: -35px;
+    margin-left: -45px;
+    margin-top: 10px;
 }
 
 .skills-container #react img{
-    width: 200px;
-    height: 120px;
+    width: 210px;
+    height: 140px;
     position: absolute;
     margin-left: -65px;
+    margin-top: 8px;
 }
 
 .skills-container #mysql img{
@@ -245,18 +252,28 @@ span{
 }
  
 .skills-container #java img{
-    width: 150px;
-    height: 120px;
+    width: 110px;
+    height: 100px;
     position: absolute;
-    margin-left: -35px;
+    margin-left: -5px;
+    margin-top: 10px;
 }
 
 .skills-container #c img{
-    width: 150px;
-    height: 120px;
+    width: 10px;
+    height: 10px;
     position: absolute;
-    margin-left: -35px;
+    /* margin-left: -35px;
+    margin-top: 0px; */
 }
+
+.skills-container h2{
+    font-size: 28px;
+    text-align: right;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
 .projects{
     background: var(--second-bg-color);
 }
