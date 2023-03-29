@@ -39,6 +39,10 @@ body{
     z-index: 100;
 }
 
+.header.sticky{
+    border-bottom: 0.6rem solid rgba(0, 0, 0, 0.2);
+}
+
 img{
     width: 80px;
     height: 80px;
@@ -78,14 +82,14 @@ section{
     top: 80px;
 }
 
-.home .home-img img{
+.home-img img{
     top: -4vh;
-    left: 80%;
+    left: 20%;
     position: relative;
-    width: 300px;
-    height: 350px;
+    width: 450px;
+    height: 400px;
+    border-radius: 150px;
 }
-
 
 .home-content h3{
     font-size: 3.2rem;
@@ -107,7 +111,8 @@ span{
 }
 
 .home-content p{
-    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
 }
 
 .social-media a{
@@ -185,9 +190,9 @@ span{
 
 .skills-container{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     transform: 0.5s ease;
 }
 
@@ -205,6 +210,7 @@ span{
     width: 300px;
     height: 150px;
     position: relative;
+    left: -70px;
 }
 
 .skills-container #html img{
@@ -259,12 +265,11 @@ span{
     margin-top: 10px;
 }
 
-.skills-container #c img{
-    width: 10px;
-    height: 10px;
+.skills-container #c-lang img{
+    width: 110px;
+    height: 100px;
     position: absolute;
-    /* margin-left: -35px;
-    margin-top: 0px; */
+    margin-top: 10px;
 }
 
 .skills-container h2{
@@ -322,24 +327,18 @@ span{
 }
 
 #p1 h4,#p2 h4{
-    font-size: 3rem;
+    font-size: 3.1rem;
+    margin-top: 1.5rem;
 }
 
-#p1 p,#p2 p{
-    font-size: 1.6rem;
-    margin: 0.3rem 0 1rem;
+.projects-content ul li{
+    font-size: 1.7rem;
+    margin: 0.3rem 2rem 1rem;
 }
 
-#p1 a,#p2 a{
-    width: 40rem;
-    height: 50rem;
-    background: var(--text-color);
-    border-radius: 25%;
-}
-
-#p1 a i,#p2 a i{
-    font-size: 2rem;
-    color: var(--second-bg-color);
+.projects-content a i{
+    font-size: 30px;
+    color: var(--text-color);
 }
 
 .contact h2{
