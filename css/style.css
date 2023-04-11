@@ -162,7 +162,10 @@ span{
 }
 
 .about-img img{
-    width: 35vw;
+    width: 320px;
+    height: 500px;
+    position: relative;
+    left: -30px;
 }
 
 .heading{
@@ -173,6 +176,7 @@ span{
 .about-content h2{
     text-align: left;
     line-height: 1.2;
+    margin-top: -100px;
 }
 
 .about-content h3{
@@ -184,8 +188,32 @@ span{
     margin: 2rem 0 3rem;
 }
 
-.heading{
-    margin-bottom: 20px;
+.about-content .tab-titles{
+    display: flex;
+    margin: -20px 0px 10px;
+}
+
+.about-content .tab-titles .tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--main-color);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
 }
 
 .skills-container{
