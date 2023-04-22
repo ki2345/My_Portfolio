@@ -22,47 +22,29 @@ body{
 }
 
 h1{
+    text-align: center;
     margin-top: 20px;
-    text-align: center;
 }
 
-.exp-container{
-    transform: 0.5s ease;
+.cer-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
 }
 
-.exp-box{
-    width: 840px;
-    height: 120px;
-    background: var(--second-bg-color);
-    margin-top: 40px;
-    margin-left: 280px;
+.cer-container .cer-box img{
+    width: 600px;
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    transition: 2.5s ease;
 }
 
-.exp-box:hover{
-    transform: scale(1.1);
-}
-
-.exp-box h3{
-    text-align: center;
-    color: var(--main-color);
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.exp-box h4{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 19px;
-    font-weight: 600;
-}
-
-.exp-box h5{
-    text-align: right;
-    position: relative;
-    top: -64px;
-    right: 24px;
-    font-size: 18px;
+.cer-container .cer-box img:hover{
+    transform: rotateY(360deg);
 }
 
 .footer{

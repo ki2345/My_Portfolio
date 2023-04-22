@@ -66,3 +66,17 @@ h1{
     position: relative;
     left: 500px;
 }
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+    margin-top: 20px;
+}
+
+.footer-text p{
+    font-size: 1.1rem;
+}
